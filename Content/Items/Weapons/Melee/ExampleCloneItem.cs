@@ -4,7 +4,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using static Terraria.ModLoader.ModContent;
 
-namespace DescentIntoUnderworld.Assets.Items.Weapons.Melee
+namespace DescentIntoUnderworld.Content.Items.Weapons.Melee
 {
 	public class ExampleCloneItem : ModItem
 	{

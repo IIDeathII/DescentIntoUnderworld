@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace DescentIntoUnderworld.Assets.Items.Weapons.Melee
+namespace DescentIntoUnderworld.Content.Items.Weapons.Melee
 {
 	// This is a basic item template.
 	// Please see tModLoader's ExampleMod for every other example:

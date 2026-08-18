@@ -17,6 +17,7 @@
 	<ItemGroup>
 	  <Folder Include="Assets\Enemies\" />
 	  <Folder Include="Assets\Bosses\" />
+	  <Folder Include="Content\Items\Weapons\Magic\" />
 	  <Folder Include="Assets\Music\" />
 	  <Folder Include="Assets\Players\" />
 	  <Folder Include="CodeKeys\" />

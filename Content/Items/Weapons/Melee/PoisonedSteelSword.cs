@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace DescentIntoUnderworld.Assets.Items.Weapons.Melee
+namespace DescentIntoUnderworld.Content.Items.Weapons.Melee
 {
     public class PoisonedSteelSword : ModItem
     {

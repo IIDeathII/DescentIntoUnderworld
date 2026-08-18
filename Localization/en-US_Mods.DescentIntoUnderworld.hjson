@@ -46,4 +46,42 @@ Items: {
 		DisplayName: Example Dual Use Weapon
 		Tooltip: ""
 	}
+
+	UnderBow: {
+		DisplayName: Under Bow
+		Tooltip: ""
+	}
+
+	UnderPistol: {
+		DisplayName: Under Pistol
+		Tooltip: ""
+	}
+
+	UnderShotgun: {
+		DisplayName: Under Shotgun
+		Tooltip: ""
+	}
+
+	UnderMinionItem: {
+		DisplayName: Under Minion Item
+		Tooltip: ""
+	}
+
+	UnderSummonWhip: {
+		DisplayName: Under Summon Whip
+		Tooltip: ""
+	}
+}
+
+Buffs: {
+	UnderMinionBuff: {
+		DisplayName: Under Minion Buff
+		Description: Mods.DescentIntoUnderworld.Buffs.UnderMinionBuff.Description
+	}
+}
+
+Projectiles: {
+	UnderBowProjectile.DisplayName: Under Bow Projectile
+	UnderMinion.DisplayName: Under Minion
+	UnderSummonWhipProjectile.DisplayName: Under Summon Whip Projectile
 }
