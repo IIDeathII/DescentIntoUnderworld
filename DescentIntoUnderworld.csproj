@@ -15,6 +15,10 @@
 		<Compile Remove="Assets/Dusts/Example*.cs" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Folder Include="Assets\Enemies\" />
+	  <Folder Include="Assets\Bosses\" />
+	  <Folder Include="Assets\Music\" />
+	  <Folder Include="Assets\Players\" />
 	  <Folder Include="CodeKeys\" />
 	</ItemGroup>
 
