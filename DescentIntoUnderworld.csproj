@@ -1,16 +1,23 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<!-- Import tModLoader mod properties -->
-	<Import Project="..\tModLoader.targets" />
+	<!-- Import tModLoader mod properties (ruta absoluta ajustada) -->
+	<Import Project="C:\Program Files (x86)\Steam\steamapps\common\tModLoader\tMLMod.targets" />
 
 	<!-- General -->
 	<PropertyGroup>
 		
 	</PropertyGroup>
 
-	<!-- References -->
+	<!-- Exclude legacy example projectiles/dusts from compilation to simplify migration -->
 	<ItemGroup>
-		
+		<Compile Remove="Assets/Items/Projectiles/Example*.cs" />
+		<Compile Remove="Assets/Items/Projectiles/*/Example*.cs" />
+		<Compile Remove="Assets/Dusts/Example*.cs" />
 	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="CodeKeys\" />
+	</ItemGroup>
+
+	<!-- References -->
 
 </Project>

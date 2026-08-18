@@ -11,4 +11,39 @@ Items: {
 			It's snowing on Mt.Fuji
 			'''
 	}
+
+	PoisonedSteelSword: {
+		DisplayName: Poisoned Steel Sword
+		Tooltip: ""
+	}
+
+	FrostSword: {
+		DisplayName: Frost Sword
+		Tooltip: ""
+	}
+
+	ExampleLaserWeapon: {
+		DisplayName: Example Laser Weapon
+		Tooltip: ""
+	}
+
+	ExampleMagicMissile: {
+		DisplayName: Example Magic Missile
+		Tooltip: ""
+	}
+
+	PurityTotem: {
+		DisplayName: Purity Totem
+		Tooltip: ""
+	}
+
+	ExampleCloneItem: {
+		DisplayName: Example Clone Item
+		Tooltip: ""
+	}
+
+	ExampleDualUseWeapon: {
+		DisplayName: Example Dual Use Weapon
+		Tooltip: ""
+	}
 }
