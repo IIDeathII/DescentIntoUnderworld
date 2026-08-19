@@ -17,17 +17,13 @@ namespace DescentIntoUnderworld.Content.Items.Weapons.Ranger
             Item.rare = ItemRarityID.Green;
 
             // Use Properties
-            Item.useTime = 8;
-            Item.useAnimation = 8;
+            Item.useTime = 20;
+            Item.useAnimation = 20;
             Item.useStyle = ItemUseStyleID.Shoot;
             Item.autoReuse = true;
 
             // Sound
-            Item.UseSound = new SoundStyle($"{nameof(DescentIntoUnderworld)}/Assets/Sounds/Items/Guns/UnderPistol") {
-                Volume = 0.9f,
-                PitchVariance = 0.2f,
-                MaxInstances = 3,
-            };
+            Item.UseSound = SoundID.Item11; 
 
             // Weapon Properties
             Item.DamageType = DamageClass.Ranged;
