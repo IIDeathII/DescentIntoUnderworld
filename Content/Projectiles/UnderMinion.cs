@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using DescentIntoUnderworld.Content.Buff;
 
 namespace DescentIntoUnderworld.Content.Projectiles
 {
@@ -25,20 +26,25 @@ namespace DescentIntoUnderworld.Content.Projectiles
             Projectile.timeLeft = 18000;
             Projectile.tileCollide = false;
             Projectile.ignoreWater = true;
+            Projectile.minionSlots = 1;
         }
 
         public override void AI()
         {
             Player player = Main.player[Projectile.owner];
 
-            // Si el jugador no está vivo, mata el minion
             if (!player.active || player.dead)
             {
                 Projectile.Kill();
                 return;
             }
 
-            // Animación simple
+            if (!player.HasBuff(ModContent.BuffType<UnderMinionBuff>()))
+            {
+                Projectile.Kill();
+                return;
+            }
+
             Projectile.frameCounter++;
             if (Projectile.frameCounter >= 8)
             {
@@ -76,7 +82,6 @@ namespace DescentIntoUnderworld.Content.Projectiles
             }
             else
             {
-                // Vuelve hacia el jugador si no hay enemigos
                 Vector2 directionToPlayer = Projectile.DirectionTo(player.Center);
                 if (Projectile.Distance(player.Center) > 200f)
                 {
@@ -96,7 +101,6 @@ namespace DescentIntoUnderworld.Content.Projectiles
 
         public override void OnHitNPC(NPC target, NPC.HitInfo hit, int damageDone)
         {
-            // Puede aplicar efectos especiales aquí
         }
     }
 }

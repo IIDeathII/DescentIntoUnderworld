@@ -17,6 +17,7 @@ namespace DescentIntoUnderworld.Content.Buff
             if (player.ownedProjectileCounts[ModContent.ProjectileType<UnderMinion>()] > 0)
             {
                 player.buffTime[buffIndex] = 18000;
+                player.maxMinions++;
             }
             else
             {
